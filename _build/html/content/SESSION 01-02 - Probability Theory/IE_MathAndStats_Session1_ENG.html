@@ -1,0 +1,1845 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>COURSE: Math &amp; Stat &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/SESSION 01-02 - Probability Theory/IE_MathAndStats_Session1_ENG';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CURSO: Math &amp; Stat" href="../SESSION%2003%20-%20Inference%20Theory%20-%20Applying%20Test/SESSION%2003%20-%20Inference%20Theory%20-%20Applying%20Test/IE_MathAndStats_Session3_ENG.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    COURSE: Math & Stat
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SESSION%2003%20-%20Inference%20Theory%20-%20Applying%20Test/SESSION%2003%20-%20Inference%20Theory%20-%20Applying%20Test/IE_MathAndStats_Session3_ENG.html">CURSO: Math &amp; Stat</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SESSION%2003-04%20-%20Random%20Variables/SESSION%2003-04%20-%20Random%20Variables/IE_MathAndStats_Session2_ENG.html">COURSE: Math &amp; Stat</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../SESSION%2004%20-%20Inference%20Theory%20-%20Building%20a%20Test/SESSION%2004%20-%20Inference%20Theory%20-%20Building%20a%20Test/IE_MathAndStats_Sesion4.1.uniform_ENG.html">CURSO: Math &amp; Stat</a></li>
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/content/SESSION 01-02 - Probability Theory/IE_MathAndStats_Session1_ENG.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://myjupyterhubinstance.com/hub/user-redirect/git-pull?repo=https%3A//github.com/executablebooks/jupyter-book&urlpath=tree/jupyter-book/docs/content/SESSION+01-02+-+Probability+Theory/IE_MathAndStats_Session1_ENG.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/SESSION 01-02 - Probability Theory/IE_MathAndStats_Session1_ENG.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/SESSION 01-02 - Probability Theory/IE_MathAndStats_Session1_ENG.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>COURSE: Math & Stat</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">COURSE: Math &amp; Stat</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1-descriptive-statistics">Session 1 - Descriptive Statistics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-central-tendency">Measures of central tendency</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-arithmetic-arithmetic-mean">Mean (Arithmetic) - Arithmetic Mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-calculate-the-average-for-all-variables">[ Exercise 1]: Calculate the average for all variables.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#median-median">Median - Median</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-calculate-the-median-for-all-variables-and-for-all-data">[ Exercise 2]: Calculate the median for all variables and for all data.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mode">Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-measure-of-spread-measures-of-spread">PART 2 - Measure of Spread - Measures of Spread</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min">Min</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max">Max</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range">Range</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation-standard-deviation">Standard Deviation - Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quartiles-and-interquartile-range-quartiles-and-interquartile-range">Quartiles and Interquartile Range - Quartiles and Interquartile Range.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#describe">Describe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="course-math-stat">
+<h1>COURSE: Math &amp; Stat<a class="headerlink" href="#course-math-stat" title="Link to this heading">#</a></h1>
+<img src="img/profile_manoelgadi.png" width=100 height=100 align="right">
+<p>Author: Prof. Manoel Gadi</p>
+<p>Contact: <a class="reference external" href="mailto:mfalonso&#37;&#52;&#48;faculty&#46;ie&#46;edu">mfalonso<span>&#64;</span>faculty<span>&#46;</span>ie<span>&#46;</span>edu</a></p>
+<p>LinkedIn: <a class="reference external" href="http://mfalonso.pythonanywhere.com">http://mfalonso.pythonanywhere.com</a></p>
+<p>Last revision: 11/Jan/2023</p>
+<hr class="docutils" />
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="session-1-descriptive-statistics">
+<h1>Session 1 - Descriptive Statistics<a class="headerlink" href="#session-1-descriptive-statistics" title="Link to this heading">#</a></h1>
+<p>Descriptive statistics is the process of describing the sample.
+To do this, measures of centrality, measures of dispersion, shape of the distribution and outliers are used.
+Visualizations can also be used to explore and make sense of the data.</p>
+<section id="measures-of-central-tendency">
+<h2>Measures of central tendency<a class="headerlink" href="#measures-of-central-tendency" title="Link to this heading">#</a></h2>
+<section id="mean-arithmetic-arithmetic-mean">
+<h3>Mean (Arithmetic) - Arithmetic Mean<a class="headerlink" href="#mean-arithmetic-arithmetic-mean" title="Link to this heading">#</a></h3>
+<p>The mean (or average) is the most popular and well-known measure of central tendency. It can be used with both discrete and continuous data, although it is most often used with continuous data. The mean is equal to the sum of all the values in the data set divided by the number of values in the data set. Thus, if we have n values in a data set and they have values x1, x2, …, xn, the sample mean, usually denoted by (pronounced x-bar), is:</p>
+<p>\begin{equation*}
+\overline{x} =
+\frac{( x_1 + x_2 + … + x_n )} {N}
+\end{equation*}</p>
+<p>This formula is usually written in a slightly different way using the Greek capital letter, pronounced “sigma”, meaning “sum of …”:ç</p>
+<p>\begin{equation*}
+\overline{x} = \frac{\left( \sum_{k=1}^n x_k \right)} {N}
+\end{equation*}</p>
+<p>You may have noticed that the above formula refers to the sample mean. So why have we called it the sample mean? This is because, in statistics, samples and populations have very different meanings and these differences are very important, even if, in the case of the mean, they are calculated in the same way. To recognize that we are calculating the population mean and not the sample mean, we use the Greek lowercase letter “mu”, denoted as µ:</p>
+<p>\begin{equation*}
+\mu = \frac{\left( \sum_{k=1}^n x_k \right)} {N}
+\end{equation*}</p>
+<p>Let’s calculate an average using Python for the sample database anorexia.csv</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import libraries numpy, pandas, and scipy.stats module</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import dataset using pd.read_csv() function</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;datasets/anorexia.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;ID&#39;, &#39;group&#39;, &#39;prewt&#39;, &#39;postwt&#39;, &#39;difwt&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>82.40833333333333
+</pre></div>
+</div>
+</div>
+</div>
+<p>DISCUSSION QUESTION 1__: is the <strong>average</strong> above from the <strong>population</strong> or the <strong>sample</strong>?</p>
+</section>
+<section id="exercise-1-calculate-the-average-for-all-variables">
+<h3>[ Exercise 1]: Calculate the average for all variables.<a class="headerlink" href="#exercise-1-calculate-the-average-for-all-variables" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ID        197.736111
+group       1.833333
+prewt      82.408333
+postwt     85.172222
+difwt       2.763889
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="median-median">
+<h3>Median - Median<a class="headerlink" href="#median-median" title="Link to this heading">#</a></h3>
+<p>The median is the mean score for a set of data that have been arranged in order of magnitude. The median is less affected by outliers and skewed values. To calculate the median, let’s assume we have the data below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[80.5, 80.7, 83.8, 84.9, 89.4, 83.3, 81.5, 91.8, 86.0, 82.6, 74.0]
+</pre></div>
+</div>
+</div>
+</div>
+<p>First we need to rearrange these data in order of magnitude (smallest first):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">));</span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[80.5, 80.7, 83.8, 84.9, 89.4, 83.3, 81.5, 91.8, 86.0, 82.6, 74.0]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">();</span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[74.0, 80.5, 80.7, 81.5, 82.6, 83.3, 83.8, 84.9, 86.0, 89.4, 91.8]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Our median is the center value, in this case, 83.3. It is the center value because there are exactly 5 scores before and 5 scores after.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>83.3
+</pre></div>
+</div>
+</div>
+</div>
+<p>DISCUSSION QUESTION 2__: is the <strong>median</strong> above from the <strong>population</strong> or the <strong>sample</strong>?</p>
+<p>In numpy we can see that the median calculation works well and returns the same element.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;list of 11 elments = &quot;</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;list of 11 elements SORTED = &quot;</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mediana = &quot;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>list of 11 elments =  [80.5, 80.7, 83.8, 84.9, 89.4, 83.3, 81.5, 91.8, 86.0, 82.6, 74.0]
+list of 11 elements SORTED =  [74.0, 80.5, 80.7, 81.5, 82.6, 83.3, 83.8, 84.9, 86.0, 89.4, 91.8]
+mediana =  83.3
+</pre></div>
+</div>
+</div>
+</div>
+<p>This works fine when we have an odd number of values, but what happens when you have an even number of values? What if you had only 10 scores? Well, you simply have to take the two average scores and average the result. So, if we look at the following example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[80.5, 80.7, 83.8, 84.9, 89.4, 83.3, 81.5, 91.8, 86.0, 82.6]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">();</span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[80.5, 80.7, 81.5, 82.6, 83.3, 83.8, 84.9, 86.0, 89.4, 91.8]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>83.55
+</pre></div>
+</div>
+</div>
+</div>
+<p>In numpy we can see that the calculation also works in the same way when we have an even number of observations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;list of 11 elments = &quot;</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;list of 11 elments SORTED = &quot;</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mediana = &quot;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>list of 11 elments =  [80.5, 80.7, 83.8, 84.9, 89.4, 83.3, 81.5, 91.8, 86.0, 82.6]
+list of 11 elments SORTED =  [80.5, 80.7, 81.5, 82.6, 83.3, 83.8, 84.9, 86.0, 89.4, 91.8]
+mediana =  83.55
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-2-calculate-the-median-for-all-variables-and-for-all-data">
+<h3>[ Exercise 2]: Calculate the median for all variables and for all data.<a class="headerlink" href="#exercise-2-calculate-the-median-for-all-variables-and-for-all-data" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ID        208.50
+group       2.00
+prewt      82.30
+postwt     84.05
+difwt       1.65
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="mode">
+<h2>Mode<a class="headerlink" href="#mode" title="Link to this heading">#</a></h2>
+<p>The mode is the most frequent value in our data set. The mode does not make much sense for continuous numeric values, it is used for categorical data where we want to know what the most common category is. In our example data we can look at the categorical field <strong>group</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">group</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     1
+1     2
+2     3
+3     1
+4     2
+     ..
+67    1
+68    2
+69    1
+70    1
+71    1
+Name: group, Length: 72, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="c1">#abajo se pude ver que aplicar mode al dataframe genera resultados sin sentido</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>...</th>
+      <th>62</th>
+      <th>63</th>
+      <th>64</th>
+      <th>65</th>
+      <th>66</th>
+      <th>67</th>
+      <th>68</th>
+      <th>69</th>
+      <th>70</th>
+      <th>71</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>ID</th>
+      <td>101.0</td>
+      <td>102.0</td>
+      <td>103.0</td>
+      <td>104.0</td>
+      <td>105.0</td>
+      <td>106.0</td>
+      <td>107.0</td>
+      <td>108.0</td>
+      <td>109.0</td>
+      <td>110.0</td>
+      <td>...</td>
+      <td>308.0</td>
+      <td>309.0</td>
+      <td>310.0</td>
+      <td>311.0</td>
+      <td>312.0</td>
+      <td>313.0</td>
+      <td>314.0</td>
+      <td>315.0</td>
+      <td>316.0</td>
+      <td>317.0</td>
+    </tr>
+    <tr>
+      <th>group</th>
+      <td>1.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>...</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prewt</th>
+      <td>80.5</td>
+      <td>83.3</td>
+      <td>86.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>...</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>postwt</th>
+      <td>81.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>...</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>difwt</th>
+      <td>-10.2</td>
+      <td>-0.7</td>
+      <td>-0.1</td>
+      <td>3.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>...</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 72 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span> <span class="c1">#we use the normalize = true to have it as a percentage</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;group&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../_images/87e435be0ad95d7130a0d3fb52b599852e01970d188efb1900b98eb6171d4fe3.png" src="../../_images/87e435be0ad95d7130a0d3fb52b599852e01970d188efb1900b98eb6171d4fe3.png" />
+</div>
+</div>
+<p>Now, to further analyze mode, we need to understand a little more of our database and mainly the <strong>group</strong> column. According to <a class="reference external" href="https://stat.ethz.ch/R-manual/R-devel/library/MASS/html/anorexia.html">https://stat.ethz.ch/R-manual/R-devel/library/MASS/html/anorexia.html</a>, our database anorexia.csv weight change data for young female anorexia patients.</p>
+<p>Being that the treatment (column: group) contains:</p>
+<ul class="simple">
+<li><p>Group 1: Individual cognitive behavioral therapy.</p></li>
+<li><p>Group 2: Control group</p></li>
+<li><p>Group 3: Family therapy.</p></li>
+</ul>
+<p>The column Prewt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> Indicates the patient&#39;s weight before the study period, in pounds.
+</pre></div>
+</div>
+<p>Postwt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> Indicates the patient&#39;s weight after the study period, in pounds.
+</pre></div>
+</div>
+<p>To calculate the mode in numpy/pandas, we do it with .mode()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    1
+Name: group, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>DISCUSSION QUESTION 3</strong>: What does the above result mean?</p>
+<hr class="docutils" />
+<p>It ends up being easier to see this result if, instead of using the mode, we directly draw a table of occurrences of the groups and a histogram.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;group&#39;</span><span class="p">,</span><span class="s1">&#39;ID&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+    </tr>
+    <tr>
+      <th>group</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;group&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[&lt;Axes: title={&#39;center&#39;: &#39;group&#39;}&gt;]], dtype=object)
+</pre></div>
+</div>
+<img alt="../../_images/0d52fee2dc59f3319d0a39a982179c534ca6b11a26e2bcef42dd04ed63a01691.png" src="../../_images/0d52fee2dc59f3319d0a39a982179c534ca6b11a26e2bcef42dd04ed63a01691.png" />
+</div>
+</div>
+<p>So it looks better that group 1 has more cases, followed by group 2 and then group 3, right?</p>
+<hr class="docutils" />
+<p><strong>DISCUSSION QUESTION 4</strong>: What information can we take from the mean, median and mode below?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ID        197.736111
+group       1.833333
+prewt      82.408333
+postwt     85.172222
+difwt       2.763889
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ID        208.50
+group       2.00
+prewt      82.30
+postwt     84.05
+difwt       1.65
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">group</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    1
+Name: group, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p>In isolation these metrics say little about our data, but if we apply these metrics to groups 1, 2 and 3 our analysis starts to get interesting.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>prewt</th>
+      <th>postwt</th>
+      <th>difwt</th>
+    </tr>
+    <tr>
+      <th>group</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>118.37931</td>
+      <td>82.689655</td>
+      <td>85.696552</td>
+      <td>3.006897</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>213.50000</td>
+      <td>81.557692</td>
+      <td>81.107692</td>
+      <td>-0.450000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>309.00000</td>
+      <td>83.229412</td>
+      <td>90.494118</td>
+      <td>7.264706</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><strong>DISCUSSION QUESTION 5</strong>: What information can we get from the mean and median by group (i.e. by treatment 1-Individual, 2-Control and 3-Family)? Which treatment seems to work best?</p>
+<hr class="docutils" />
+<p>Well, to be sure about our analysis with the measures of central tendency. We need to know the dispersion measures of our population.</p>
+</section>
+<hr class="docutils" />
+<section id="part-2-measure-of-spread-measures-of-spread">
+<h2>PART 2 - Measure of Spread - Measures of Spread<a class="headerlink" href="#part-2-measure-of-spread-measures-of-spread" title="Link to this heading">#</a></h2>
+<section id="min">
+<h3>Min<a class="headerlink" href="#min" title="Link to this heading">#</a></h3>
+<p>The min represents the smallest value in a data set. Then we calculate the range as:</p>
+<p>\Òbegin{equation}
+Min = [Min Value].
+\end{equation*}</p>
+<p>Let’s take again the example of the first 11 values of our variable weight <strong>prewt</strong> which we know indicates the patient’s weight before the study period, in pounds.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">));</span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[80.5, 80.7, 83.8, 84.9, 89.4, 83.3, 81.5, 91.8, 86.0, 82.6, 74.0]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>74.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="max">
+<h3>Max<a class="headerlink" href="#max" title="Link to this heading">#</a></h3>
+<p>The max represents the largest value in a data set. Then we calculate the range as:</p>
+<p>\begin{equation*}
+Minimum = [Maximum value]
+\end{equation*}</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>91.8
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="range">
+<h3>Range<a class="headerlink" href="#range" title="Link to this heading">#</a></h3>
+<p>The rank is the difference between the largest value and the smallest value in a data set and is the simplest measure of spread. So we calculate the rank as:</p>
+<p>\begin{equation*}
+Range = [Maximum Value] - [Minimum Value].
+\end{equation*}</p>
+<p>So the range is:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">-</span><span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>17.799999999999997
+</pre></div>
+</div>
+</div>
+</div>
+<p>Calculating the range in numpy/pandas for all variables.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>prewt</th>
+      <th>postwt</th>
+      <th>difwt</th>
+    </tr>
+    <tr>
+      <th>group</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>227</td>
+      <td>94.9</td>
+      <td>103.6</td>
+      <td>20.9</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>226</td>
+      <td>91.8</td>
+      <td>89.6</td>
+      <td>15.9</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>317</td>
+      <td>94.2</td>
+      <td>101.6</td>
+      <td>21.5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>prewt</th>
+      <th>postwt</th>
+      <th>difwt</th>
+    </tr>
+    <tr>
+      <th>group</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>101</td>
+      <td>70.0</td>
+      <td>71.3</td>
+      <td>-9.1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>201</td>
+      <td>70.5</td>
+      <td>73.0</td>
+      <td>-12.2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>301</td>
+      <td>73.4</td>
+      <td>75.2</td>
+      <td>-5.3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>prewt</th>
+      <th>postwt</th>
+      <th>difwt</th>
+    </tr>
+    <tr>
+      <th>group</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>126</td>
+      <td>24.9</td>
+      <td>32.3</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>25</td>
+      <td>21.3</td>
+      <td>16.6</td>
+      <td>28.1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>16</td>
+      <td>20.8</td>
+      <td>26.4</td>
+      <td>26.8</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="standard-deviation-standard-deviation">
+<h3>Standard Deviation - Standard Deviation<a class="headerlink" href="#standard-deviation-standard-deviation" title="Link to this heading">#</a></h3>
+<p>Standard deviation measures the dispersion of data about the mean value. It is useful for comparing data sets that may have the same mean but a different range.</p>
+<p>\begin{equation*}
+Deviation.standard = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2}
+\end{equation*}</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">));</span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[80.5, 80.7, 83.8, 84.9, 89.4, 83.3, 81.5, 91.8, 86.0, 82.6, 74.0]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_bar</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;average=&quot;</span><span class="p">,</span><span class="n">x_bar</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>average= 83.5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="k">for</span> <span class="n">x_i</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+    <span class="n">a_sum</span> <span class="o">=</span> <span class="n">a_sum</span> <span class="o">+</span> <span class="p">(</span><span class="n">x_i</span> <span class="o">-</span> <span class="n">x_bar</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;(x_i - x_bar)^2=(&quot;</span><span class="p">,</span><span class="n">x_i</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span><span class="n">x_bar</span><span class="p">,</span><span class="s2">&quot;)^2=&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">x_i</span> <span class="o">-</span> <span class="n">x_bar</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;| SUMA = &quot;</span><span class="p">,</span> <span class="n">a_sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(x_i - x_bar)^2=( 80.5 - 83.5 )^2= 9.0 | SUMA =  9.0
+(x_i - x_bar)^2=( 80.7 - 83.5 )^2= 7.839999999999984 | SUMA =  16.839999999999982
+(x_i - x_bar)^2=( 83.8 - 83.5 )^2= 0.08999999999999829 | SUMA =  16.929999999999982
+(x_i - x_bar)^2=( 84.9 - 83.5 )^2= 1.960000000000016 | SUMA =  18.889999999999997
+(x_i - x_bar)^2=( 89.4 - 83.5 )^2= 34.810000000000066 | SUMA =  53.70000000000006
+(x_i - x_bar)^2=( 83.3 - 83.5 )^2= 0.04000000000000114 | SUMA =  53.74000000000006
+(x_i - x_bar)^2=( 81.5 - 83.5 )^2= 4.0 | SUMA =  57.74000000000006
+(x_i - x_bar)^2=( 91.8 - 83.5 )^2= 68.88999999999996 | SUMA =  126.63000000000002
+(x_i - x_bar)^2=( 86.0 - 83.5 )^2= 6.25 | SUMA =  132.88000000000002
+(x_i - x_bar)^2=( 82.6 - 83.5 )^2= 0.8100000000000103 | SUMA =  133.69000000000003
+(x_i - x_bar)^2=( 74.0 - 83.5 )^2= 90.25 | SUMA =  223.94000000000003
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Standard Deviation - Desviación estándar = &quot;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a_sum</span><span class="o">/</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standard Deviation - Desviación estándar =  4.732229918336598
+</pre></div>
+</div>
+</div>
+</div>
+<p>But in Python Pandas we can use <strong>std</strong> ;-)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.732229918336598
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="quartiles-and-interquartile-range-quartiles-and-interquartile-range">
+<h3>Quartiles and Interquartile Range - Quartiles and Interquartile Range.<a class="headerlink" href="#quartiles-and-interquartile-range-quartiles-and-interquartile-range" title="Link to this heading">#</a></h3>
+<p>Quartiles tell us about the spread of a data set by dividing the data set into 4 groups. Just as the median divides into N=2 groups by taking 1 central element or the average of the two central elements, the operation to find the quartiles (N=4) divides the data into 4 groups using 3 boundaries (N-1 boundaries generate N groups) and the boundaries are the 25% element, the 50% element (median) and the 75% element.</p>
+<p>1st quartile - 25% percentile</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span> <span class="c1"># 25% percentil - Primero cuartil</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>79.6
+</pre></div>
+</div>
+</div>
+</div>
+<p>Second quartile - Same as median - 50% percentile</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>82.3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>82.3
+</pre></div>
+</div>
+</div>
+</div>
+<p>Third quartile - 75% percentile</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>86.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">showmeans</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="../../_images/40b910e3284d3ee20b495aab576fde02fb0c664d266e333439f4f831671a78fa.png" src="../../_images/40b910e3284d3ee20b495aab576fde02fb0c664d266e333439f4f831671a78fa.png" />
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="describe">
+<h3>Describe<a class="headerlink" href="#describe" title="Link to this heading">#</a></h3>
+<p>In pandas, the <strong>describe</strong> function combines measures of central tendency and dispersion in a single operation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">prewt</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    72.000000
+mean     82.408333
+std       5.182466
+min      70.000000
+25%      79.600000
+50%      82.300000
+75%      86.000000
+max      94.900000
+Name: prewt, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <strong>loop</strong> below prints the <strong>describe</strong> function by group for each of the continuous variables.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;prewt&#39;</span><span class="p">,</span> <span class="s1">&#39;postwt&#39;</span><span class="p">,</span> <span class="s1">&#39;difwt&#39;</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;VARIABLE = &quot;</span><span class="p">,</span> <span class="n">var</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="n">var</span><span class="p">,</span><span class="s1">&#39;group&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>VARIABLE =  prewt
+      prewt                                                        
+      count       mean       std   min     25%    50%     75%   max
+group                                                              
+1      29.0  82.689655  4.845495  70.0  80.400  82.60  85.000  94.9
+2      26.0  81.557692  5.707060  70.5  77.725  80.65  85.875  91.8
+3      17.0  83.229412  5.016693  73.4  80.500  83.30  86.000  94.2
+---
+VARIABLE =  postwt
+      postwt                                                        
+       count       mean       std   min     25%   50%     75%    max
+group                                                               
+1       29.0  85.696552  8.351924  71.3  81.900  83.9  90.900  103.6
+2       26.0  81.107692  4.744253  73.0  77.575  80.7  84.675   89.6
+3       17.0  90.494118  8.475072  75.2  90.700  92.5  95.200  101.6
+---
+VARIABLE =  difwt
+      difwt                                                 
+      count      mean       std   min  25%   50%   75%   max
+group                                                       
+1      29.0  3.006897  7.308504  -9.1 -0.7  1.40   3.9  20.9
+2      26.0 -0.450000  7.988705 -12.2 -7.0 -0.35   3.6  15.9
+3      17.0  7.264706  7.157421  -5.3  3.9  9.00  11.4  21.5
+---
+</pre></div>
+</div>
+</div>
+</div>
+<p>Perhaps the power of all this information for analysis is most evident in a BoxPlot graph:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Group 1: Individual Cognitive Behavior Therapy&quot;</span><span class="p">)</span>
+<span class="n">boxplot</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">group</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;prewt&#39;</span><span class="p">,</span> <span class="s1">&#39;postwt&#39;</span><span class="p">,</span> <span class="s1">&#39;difwt&#39;</span><span class="p">],</span><span class="n">showmeans</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Group 1: Individual Cognitive Behavior Therapy
+</pre></div>
+</div>
+<img alt="../../_images/5097c60c63da46063f20985ef9d8079bba709f6f06ecd644a17e238581b1a375.png" src="../../_images/5097c60c63da46063f20985ef9d8079bba709f6f06ecd644a17e238581b1a375.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Group 2: Control group&quot;</span><span class="p">)</span>
+<span class="n">boxplot</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">group</span> <span class="o">==</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;prewt&#39;</span><span class="p">,</span> <span class="s1">&#39;postwt&#39;</span><span class="p">,</span> <span class="s1">&#39;difwt&#39;</span><span class="p">],</span><span class="n">showmeans</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Group 2: Control group
+</pre></div>
+</div>
+<img alt="../../_images/d88dfaacdfe90677cc47cf7ae4ba4b4313d64e71888237b2194933c34aceda52.png" src="../../_images/d88dfaacdfe90677cc47cf7ae4ba4b4313d64e71888237b2194933c34aceda52.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Group 3: Family therapy&quot;</span><span class="p">)</span>
+<span class="n">boxplot</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">group</span> <span class="o">==</span> <span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;prewt&#39;</span><span class="p">,</span> <span class="s1">&#39;postwt&#39;</span><span class="p">,</span> <span class="s1">&#39;difwt&#39;</span><span class="p">],</span><span class="n">showmeans</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Group 3: Family therapy
+</pre></div>
+</div>
+<img alt="../../_images/9f0f9d9cc9c096ab116c10e8f86b65a91646a9acaffcd63c8beec456d41e0ba0.png" src="../../_images/9f0f9d9cc9c096ab116c10e8f86b65a91646a9acaffcd63c8beec456d41e0ba0.png" />
+</div>
+</div>
+<p><strong>DISCUSSION QUESTION 6</strong>: With all that information in hand, which treatment seems to work best?</p>
+<hr class="docutils" />
+<section id="conclusions">
+<h4>Conclusions<a class="headerlink" href="#conclusions" title="Link to this heading">#</a></h4>
+<p>How we choose to analyze data can lead to completely different results.
+Often you can impact (intentionally or unintentionally) what people take for certain depending on how you communicate the results.</p>
+</section>
+<section id="tips">
+<h4>Tips<a class="headerlink" href="#tips" title="Link to this heading">#</a></h4>
+<p>Be skeptical of your results and those provided by others.
+Consider other ways of analyzing the data and whether you chose correctly.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "executablebooks/jupyter-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\SESSION 01-02 - Probability Theory"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="../SESSION%2003%20-%20Inference%20Theory%20-%20Applying%20Test/SESSION%2003%20-%20Inference%20Theory%20-%20Applying%20Test/IE_MathAndStats_Session3_ENG.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">CURSO: Math &amp; Stat</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">COURSE: Math &amp; Stat</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1-descriptive-statistics">Session 1 - Descriptive Statistics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-central-tendency">Measures of central tendency</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-arithmetic-arithmetic-mean">Mean (Arithmetic) - Arithmetic Mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-calculate-the-average-for-all-variables">[ Exercise 1]: Calculate the average for all variables.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#median-median">Median - Median</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-calculate-the-median-for-all-variables-and-for-all-data">[ Exercise 2]: Calculate the median for all variables and for all data.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mode">Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-measure-of-spread-measures-of-spread">PART 2 - Measure of Spread - Measures of Spread</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min">Min</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max">Max</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range">Range</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation-standard-deviation">Standard Deviation - Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quartiles-and-interquartile-range-quartiles-and-interquartile-range">Quartiles and Interquartile Range - Quartiles and Interquartile Range.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#describe">Describe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

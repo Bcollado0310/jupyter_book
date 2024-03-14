@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content/SESSION 01-02 - Probability Theory/IE_MathAndStats_Session1_ENG
+parts:
+- caption: Part I  # A part title
+  chapters:
+  - file: content/SESSION 03 - Inference Theory - Applying Test/SESSION 03 - Inference Theory - Applying Test/IE_MathAndStats_Session3_ENG
+
+- caption: Part II
+  chapters:
+  - file: content/SESSION 03-04 - Random Variables/SESSION 03-04 - Random Variables/IE_MathAndStats_Session2_ENG
+  - file: content/SESSION 04 - Inference Theory - Building a Test/SESSION 04 - Inference Theory - Building a Test/IE_MathAndStats_Sesion4.1.uniform_ENG
